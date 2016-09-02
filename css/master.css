@@ -106,13 +106,16 @@ a{
 
 .wrap #mascot .img_btns{
 	display: block;width: 150px;height: 650px;
-	margin-left: 100px;float: left;
+	margin:0 50px;float: left;
 }
 .wrap #mascot .img_btns a{
 	display: block;width: 150px;height: 150px;
 }
+.wrap #mascot .img_btns a#img33{
+	margin-top: 50px;
+}
 .wrap #mascot .img_btns a#smalltv{
-	margin-top: 200px;
+	margin-top: 150px;
 }
 .wrap #mascot .img_btns a img{
 	width: 150px;height: 150px;
@@ -128,7 +131,7 @@ a{
 .wrap #mascot .div_mascots>div{
 	display: none;width: 600px;height: 200px;
 	background-color: #FFFFFF;
-	position:relative;padding: 20px;
+	position:absolute;padding: 20px;
 	border: 10px solid #66CCFF;
 	border-radius: 25px;
 }
@@ -142,13 +145,13 @@ a{
 	left: -66px;border-color: transparent  #FFFFFF transparent transparent;
 }
 .wrap #mascot .div_mascots .div33{
-	top: -140px;
+	top: 140px;
 }
 .wrap #mascot .div_mascots .div33::before,.wrap #mascot .div_mascots .div33::after{
 	top: 50px;
 }
 .wrap #mascot .div_mascots .divTv{
-	top:-130px;
+	top:400px;
 }
 .wrap #mascot .div_mascots .divTv::before,.wrap #mascot .div_mascots .divTv::after{
 	top: 120px;
