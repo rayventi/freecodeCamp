@@ -2,11 +2,11 @@
 	margin: 0;padding: 0;
 }
 body{
-	cursor: url('http://127.0.0.1:8020/freecodeCamp/img/cursor.cur'),auto;
+	cursor: url('../img/cursor.cur'),auto;
 	font-family: "微软雅黑";
 }
 a{
-	cursor: url('http://127.0.0.1:8020/freecodeCamp/img/cursor_a.cur'),auto;
+	cursor: url('../img/cursor_a.cur'),auto;
 	text-decoration: none;
 	color: #000000;
 }
@@ -161,4 +161,116 @@ a{
 }
 .wrap #mascot .div_mascots>div p{
 	font-size: 14px;
+}
+
+.wrap #events .event_lists{
+	width: 810px;height: 340px;
+	margin: 180px auto;display: block;
+}
+.wrap #events .event_lists a{
+	display: block;width: 250px;height: 150px;
+	margin: 10px;float: left;position: relative;
+}
+.wrap #events .event_lists a img{
+	width: 250px;height: 150px;
+}
+.wrap #events .event_lists a div{
+	display: none;width: 250px;height: 150px;
+	position: absolute;top: 0;left: 0;
+	background-color: rgba(0,0,0,0.7);
+	color: #FFBF77;
+}
+.wrap #events .event_lists a:hover div{
+	display: block;
+}
+.wrap #events .event_lists a div h3{
+	width: 210px;height: auto;margin: 20px auto 10px auto;
+	font-size: 18px;text-align: center;
+}
+.wrap #events .event_lists a div p{
+	width: 180px;height: auto;margin:0 auto 0 auto;
+	font-size: 14px;
+}
+
+.wrap #about .container .about_us{
+	display: block;margin: 0 auto;padding: 20px 0;
+	width: 630px;height: 660px;
+	background: rgba(255,255,255,0.7);
+	overflow: hidden;
+}
+.wrap #about .container .about_us .box{
+	display: block;padding: 20px;width: 610px;height: 640px;
+	overflow-y: scroll;
+}
+.wrap #about .container .about_us p{
+	font-size: 14px;
+}
+.footer{
+	display: block;width: 100%;height: 250px;
+	background-color: #CCCCCC;margin: 0;
+}
+.footer .content{
+	display: block;width: 1000px;margin: 0 auto;
+	padding: 30px 0;
+}
+.footer .content ul{
+	list-style: none;display: block;
+	width: 500px;height: 130px;
+}
+.footer .content ul li{
+	display: inline-block;
+	width: 100px;margin: 30px 12px;
+}
+.footer .content ul li a{
+	color: #44AADD;
+}
+.footer .content p{
+	display: block;width: 500px;height: 50px;
+	font-size: 14px;
+}
+.footer .contact_us{
+	width: 400px;height: auto;float: right;
+	margin-top: -115px;
+}
+.footer .contact_us a{
+	display: inline-block;width: 100px;height: 100px;
+	position: relative;
+}
+.footer .contact_us a .pic{
+	width: 56px;height: 56px;
+	margin: auto;
+}
+.footer .contact_us a img{
+	display: none;width: 100px;height: 100px;
+	padding: 10px;background-color: #FFFFFF;
+	transition-duration: 0.2s;border: 1px solid #AAAAAAA;
+	position: absolute;top: -125px;left: -10px;
+}
+.footer .contact_us a:hover img{
+	display: block;
+}
+.footer .contact_us a p{
+	display: block;width: 100px;height: 20px;
+	text-align: center;margin-top: 10px;
+}
+.footer .contact_us a:hover p{
+	color: #44AADD;
+}
+.footer .contact_us a.app .pic{
+	background: url(../img/contact.png) no-repeat 0 -128px;
+}
+.footer .contact_us a.app:hover .pic{
+	background-position: -66px -128px;
+}
+.footer .contact_us a.sina .pic{
+	background: url(../img/contact.png) no-repeat 0 -256px;
+}
+.footer .contact_us a.sina:hover .pic{
+	background-position: -66px -256px;
+}
+.footer .contact_us a.weixin .pic{
+	background: url(../img/contact.png) no-repeat 0 0;
+}
+.footer .contact_us a.weixin:hover .pic{
+	background-position: -66px 0;
 }
