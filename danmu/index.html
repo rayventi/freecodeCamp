@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>弹幕</title>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="style/master.css"/>
+	</head>
+	<body>
+		<div class="main"></div>
+		<div class="input_content">
+			<input type="text" name="input_box" id="input_box" value="" placeholder="请输入弹幕"/>
+			<a href="javascript:void(0);" id="send">发射</a>
+			<a href="javascript:void(0);" id="clear">清除</a>
+		</div>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			$("#send").click(function(){
+				var danmu_text=$(".input_content input").val();
+				//将input的值赋给变量danmu_text
+				$(".input_content input").val('');
+				//赋空值给input
+				var css_top=parseInt(600*Math.random());
+				//新增div的高度为随机数
+				$(".main").append(//创建一个jQuery对象
+					$("<p class='added_div'></p>").text(danmu_text).css("top",css_top+'px').animate({right:'1300px'},12000).fadeOut()
+				);
+			});
+			
+			$(".input_content input").bind("keypress",function(e){
+				if(event.keyCode=="13"){
+						$("#send").click();
+					}				
+			});
+			
+			$("#clear").click(function(){
+				$(".added_div").remove();
+			});			
+		})
+	</script>
+</html>
